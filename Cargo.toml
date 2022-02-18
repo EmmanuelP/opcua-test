@@ -1,0 +1,17 @@
+[package]
+name = "opcua-test"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "producer"
+path = "src/producer/main.rs"
+
+[[bin]]
+name = "consumer"
+path = "src/consumer/main.rs"
+
+[dependencies]
+opcua-server = {git = "https://github.com/locka99/opcua.git"}
+opcua-client = {git = "https://github.com/locka99/opcua.git"}
+log4rs = ">=1.0"
